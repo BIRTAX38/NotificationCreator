@@ -1,10 +1,10 @@
 const CACHE_NAME = 'my-cache-v1';
 const urlsToCache = [
   '/',
-  '/NotificationCreator',
-  '/NotificationCreator/index.html',
-  '/NotificationCreator/app.js',
-  '/NotificationCreator/icon/icon.png'
+  './',
+  './index.html',
+  './app.js',
+  './icon/icon.png'
 
 ];
 
