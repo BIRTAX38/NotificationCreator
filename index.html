@@ -1,0 +1,353 @@
+<html>
+
+<head>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="/NotificationCreator/manifest.webmanifest">
+  <meta name="full-screen" content="yes" />
+  <meta name="screen-orientation" content="landscape" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="apple-mobile-web-app-title" content="37Notification creator">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link rel="apple-touch-icon" id="applogo"
+    href="data:image/png;base64,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">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Noto+Sans+JP:wght@500&family=Secular+One&display=swap"
+    rel="stylesheet">
+  <title>37Notification creator</title>
+  <style>
+    body {
+      background-color: #36393f;
+      margin: 0;
+      padding: 8px;
+
+      font-family: 'Secular One', sans-serif;
+    }
+
+    textarea::-webkit-scrollbar-track {
+      background-color: transparent;
+      top: -5px;
+    }
+
+    textarea::-webkit-scrollbar {
+      width: 10px;
+      background-color: transparent;
+      top: -5px;
+    }
+
+    textarea::-webkit-scrollbar-thumb {
+      border-radius: 100px;
+      background-color: #555C60;
+    }
+
+    textarea {
+      border: 2px solid white;
+      border-radius: 10px;
+      min-width: 95%;
+      max-width: 95%;
+      height: 200px;
+      margin-left: 2.5%;
+      background-color: #303339;
+      color: white;
+      resize: none;
+      font-family: 'Secular One', sans-serif;
+      outline: none;
+      font-size: 20px;
+    }
+
+    #convertBtn {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border-radius: 6px;
+      margin-left: 2.5%;
+      min-width: 95%;
+      min-height: 70px;
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      position: relative;
+      border: none;
+      background-color: #4e545b;
+      color: #f0f8ff;
+      font-size: 40px;
+      font-family: 'Secular One', sans-serif;
+    }
+
+    #jsCode::placeholder {
+      text-align: center;
+      font-size: 16px;
+    }
+
+
+    /* Poniżej znajdują się style CSS */
+    /*
+    body {
+      background-color: #efefef;
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    */
+
+    .container {
+      height: 4%;
+      margin: 0 auto;
+    }
+
+    .button-wrap {
+      position: relative;
+      text-align: center;
+      top: 50%;
+      margin-top: -2.5em;
+    }
+
+    .button-label {
+      display: inline-block;
+      padding: 1px 26px;
+      margin: 0.5em;
+      cursor: pointer;
+      color: #292929;
+      border-radius: 0.25em;
+      background: #efefef;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+      transition: 0.3s;
+      user-select: none;
+    }
+
+    .button-label h1 {
+      font-size: 26px;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .button-label:hover {
+      background: #4E545B;
+      color: #ffffff;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.32);
+    }
+
+    .button-label:active {
+      transform: translateY(2px);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0px -1px 0 rgba(0, 0, 0, 0.22);
+    }
+
+    #one-button:checked+.button-label {
+      background: #4E545B;
+      color: #efefef;
+    }
+
+    #two-button:checked+.button-label {
+      background: #4E545B;
+      color: #efefef;
+    }
+
+    #three-button:checked+.button-label {
+      background: #4E545B;
+      color: #efefef;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    /* Koniec stylów CSS */
+    h37 {
+      padding-top: 8px;
+      padding-bottom: 30px;
+      text-align: center; /* Wyśrodkowanie tekstu w poziomie */
+      display: list-item;
+      font-size: 24px; /* Rozmiar czcionki */
+      font-weight: bold; /* Pogrubienie tekstu */
+      color: #F0F8FF; /* Kolor tekstu */
+      margin: 0 auto; /* Wyśrodkowanie w poziomie */
+      max-width: 100%; /* Szerokość do maksymalnej dostępnej szerokości */
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <textarea id="jsCode" type="text" placeholder="Wpisz tutaj treść która ma być podzielona"></textarea>
+  <button id="convertBtn">Podziel treść</button>
+  <textarea id="result" placeholder="Wynik" readonly></textarea>
+
+  <h37>ilość ponownego wysłania podzielonej treści</h37>
+  <div class="container">
+    <div class="button-wrap">
+      <input type="radio" name="accept-offers" id="one-button" class="hidden radio-label" checked>
+      <label for="one-button" class="button-label">
+        <h1>1</h1>
+      </label>
+      <input type="radio" name="accept-offers" id="two-button" class="hidden radio-label">
+      <label for="two-button" class="button-label">
+        <h1>2</h1>
+      </label>
+      <input type="radio" name="accept-offers" id="three-button" class="hidden radio-label">
+      <label for="three-button" class="button-label">
+        <h1>3</h1>
+      </label>
+    </div>
+  </div>
+
+  <script>
+    // Pobierz wszystkie radio buttons o nazwie "accept-offers"
+    const radioButtons = document.querySelectorAll('input[name="accept-offers"]');
+
+    // Globalna zmienna do przechowywania wybranej wartości
+    let iloscpowtorzen;
+
+    // Funkcja, która ustawia wartość "iloscpowtorzen" w zależności od zaznaczonego radio buttona
+    function setiloscpowtorzen() {
+      for (const radioButton of radioButtons) {
+        if (radioButton.checked) {
+          switch (radioButton.id) {
+            case 'one-button':
+                iloscpowtorzen = 1;
+              break;
+            case 'two-button':
+                iloscpowtorzen = 2;
+              break;
+            case 'three-button':
+                iloscpowtorzen = 3;
+              break;
+            default:
+                iloscpowtorzen = 0; // Domyślna wartość w przypadku braku zaznaczenia
+              break;
+          }
+          break;
+        }
+      }
+    }
+    var numerCzesci;
+    var calatresc;
+    function repeatNotifyMe(tresc, numer) {
+      for (var i = 0; i < iloscpowtorzen; i++) {
+        notifyMe(tresc, numer);
+      }
+    }
+
+
+
+    // request permission on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      if (!Notification) {
+        alert('Desktop notifications not available in your browser. Try Chromium.');
+        return;
+      }
+
+      if (Notification.permission !== 'granted')
+        Notification.requestPermission();
+    });
+
+
+
+
+
+    function notifyMe(tresc, numer) {
+      if ('serviceWorker' in navigator && 'showNotification' in ServiceWorkerRegistration.prototype) {
+        // Check if the user agent string contains "Android"
+        if (/Android/i.test(navigator.userAgent)) {
+          navigator.serviceWorker.ready.then(function (registration) {
+            registration.showNotification(numer, {
+              body: tresc,
+            });
+          });
+        } else {
+          // Handle non-Android devices with the standard Notification API
+          if ('Notification' in window) {
+            if (Notification.permission === 'granted') {
+              var notification = new Notification(numer, {
+                body: tresc,
+              });
+              notification.onclick = function () {
+                // Handle notification click event
+              };
+            } else if (Notification.permission !== 'denied') {
+              Notification.requestPermission().then(function (permission) {
+                if (permission === 'granted') {
+                  var notification = new Notification(numer, {
+                    body: tresc,
+                  });
+                  notification.onclick = function () {
+                    // Handle notification click event
+                  };
+                }
+              });
+            }
+          } else {
+            alert('Notifications not supported in your browser. Try a different browser.');
+          }
+        }
+      } else {
+        alert('Notifications not supported in your browser. Try a different browser.');
+      }
+    }
+
+
+
+
+
+    function podzielITresc(tresc) {
+      const maksymalnaDlugosc = 180 - 1; // 4 znaki na numer części
+      const calkowitaLiczbaCzesci = Math.ceil(tresc.length / maksymalnaDlugosc);
+
+      if (calkowitaLiczbaCzesci > 10) {
+        alert('UWAGA za dużo');
+      }
+
+      var resultTextarea = document.getElementById('result');
+      resultTextarea.value = ''; // Wyczyść wynik przed dodaniem nowych danych
+
+      for (let i = 1; i <= calkowitaLiczbaCzesci; i++) {
+        const numerCzesci = i + "/" + calkowitaLiczbaCzesci;
+        let dlugoscDlaTresci = maksymalnaDlugosc - numerCzesci.length;
+
+        if (i === calkowitaLiczbaCzesci) {
+          dlugoscDlaTresci = tresc.length;
+        }
+
+        const czescTresci = tresc.substr(0, dlugoscDlaTresci);
+        tresc = tresc.slice(dlugoscDlaTresci);
+
+        console.log(numerCzesci + " " + czescTresci);
+        var calatresc = numerCzesci + " " + czescTresci;
+        repeatNotifyMe(calatresc, numerCzesci);
+
+        resultTextarea.value += calatresc + '\n'; // Dodaj wynik do textarea
+      }
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var convertBtn = document.getElementById('convertBtn');
+      convertBtn.addEventListener('click', function () {
+        setiloscpowtorzen()
+        var trescDoPodzialu = document.getElementById('jsCode').value;
+        podzielITresc(trescDoPodzialu);
+      });
+    });
+  </script>
+
+
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/NotificationCreator/sw.js')
+          .then(registration => {
+            console.log('Service Worker zarejestrowany z sukcesem:', registration);
+          })
+          .catch(error => {
+            console.log('Błąd podczas rejestracji Service Workera:', error);
+          });
+      });
+    }
+  </script>
+</body>
+
+</html>
